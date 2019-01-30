@@ -1,0 +1,175 @@
+
+/* CSS Reset */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* CSS Starts Here */
+
+/* Main CSS */
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.5;
+}
+
+/* Headings */
+
+.h {
+    font-family: 'Poppins', sans-serif;
+    font-size: 35px;
+    font-weight: 700;
+}
+
+/* Top Logo */
+
+.logo {
+    padding: 100px 70px;
+    max-width: 100%;
+}
+
+/* Intro Section */
+
+.intro-text {
+    text-align: center;
+    margin: 100px auto 0px auto;
+    width: 80%;
+}
+.intro-p-container {
+    margin: 25px auto 0px auto;
+    width: 60%;
+    color: hsl(208, 11%, 55%);
+}
+.intro-image {
+    text-align: center;
+    margin: 100px auto;
+    width: 75%;
+}
+.img {
+    max-width: 100%;
+}
+
+/* Register Section */
+
+.register {
+    text-align: center;
+    margin: 0 auto 200px auto;
+}
+.register-text {
+    margin-bottom: 50px;
+}
+.email {
+    padding: 17.5px 0 17.5px 20px;
+    width: 30%;
+    box-shadow: 0px 0px 2px 4px hsl(200, 11%, 95%);
+}
+.submit {
+    padding: 17.5px 0;
+    width: 15%;
+    color: white;
+    font-weight: 700;
+    background-color: hsl(322, 100%, 66%);
+}
+.sign-up {
+    border: none;
+    border-radius: 5px;
+    margin: 0 15px;
+}
+
+/* Footer */
+
+.footer-main {
+    background-color: hsl(192, 100%, 9%);
+    color: white;
+    padding: 100px 0 50px 0;
+}
+.link {
+    color: white;
+    text-decoration: none;
+}
+.footer-logo {
+    filter: brightness(0) invert(1); /* Changes logo to display as white */
+}
+.social-media ion-icon {
+    font-size: 40px;
+    margin: 0 5px;
+}
+
+/* Footer Grid */
+
+.grid-container {
+    margin: 0 auto;
+    width: 90%;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto;
+    grid-template-rows: 100px 100px;
+    grid-column-gap: 1%;
+}
+.grid-item {
+    justify-self: end;
+    align-self: center;
+}
+.item1 {
+    justify-self: start;
+}
+.item8 {
+    justify-self: start;
+}
+.item9 {
+    grid-column: 5/8;
+    grid-row: 2/3;
+    font-size: 14px;
+}
+
+/* Mobile Layout */
+
+@media (max-width: 850px) {
+    .grid-container {
+        grid-template-columns: auto;
+        grid-template-rows: 100px 100px 100px 100px 100px 100px 100px 100px 100px;
+    }
+    .grid-item {
+        justify-self: center;
+    }
+}
