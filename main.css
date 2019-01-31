@@ -65,8 +65,8 @@ body {
 /* Top Logo */
 
 .logo {
-    width: 25%;
-    padding: 25px;
+    width: 27.5%;
+    padding: 5% 7%;
 }
 
 /* Intro Section */
@@ -97,13 +97,14 @@ body {
 }
 .register-text {
     width: 100%;
+    margin: 20px 0;
 }
 .register-h {
     font-size: 23px;
 }
 .sign-up {
     margin-top: 20px;
-    padding: 15px 0;
+    padding: 20px 0;
     border-radius: 5px;
     border: none;
     -webkit-appearance: none;
@@ -146,7 +147,7 @@ body {
     width: 87.5%;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: 90%;
+    grid-template-columns: 100%;
     grid-template-rows: 100px 100px auto auto auto auto auto auto 100px;
     grid-row-gap: 15px;
 }
@@ -160,4 +161,88 @@ body {
 .item9 {
     justify-self: center;
     align-self: center;
+    font-size: 10px;
+}
+
+/* Media Queries */
+
+@media (min-width: 768px) {
+    body {
+        font-size: 18px;
+    }
+    .h {
+        font-size: 30px;
+    }
+    .intro-p-container {
+        width: 653px;
+        margin: 30px auto;
+    }
+    .item9 {
+        font-size: 13px;
+    }
+    .flex-container {
+        flex-direction: row;
+        justify-content: center;
+    }
+    .email {
+        width: 50%;
+    }
+    .submit {
+        width: 20%;
+    }
+    .sign-up {
+        margin: 20px 1.5%;
+    }
+}
+
+@media (min-width: 992px) {
+
+    body {
+        font-size: 20px;
+    }
+    .h {
+        font-size: 35px;
+    }
+    .sign-up {
+        margin: 20px 12.25px;
+    }
+    .email {
+        width: 408px;
+    }
+    .submit {
+        width: 164px;
+    }
+    .item9 {
+        font-size: 16px;
+    }
+    /* Footer grid for desktop layout */
+
+    .grid-container {
+        grid-template-columns: 30% auto auto auto auto auto auto;
+        grid-template-rows: 150px 75px;
+        grid-row-gap: 0;
+        grid-column-gap: 15px;
+        align-items: center;
+        justify-items: end;
+        padding: 75px 0;
+    }
+    .grid-items {
+        justify-self: end;
+    }
+    .item1 {
+        justify-self: start;
+        align-self: auto;
+    }
+    .item8 {
+        grid-row: auto;
+        justify-self: start;
+        align-self: center;
+    }
+    .item9 {
+        grid-column: 6/8;
+        grid-row: 2/3;
+        justify-self: end;
+        align-self: center;
+        font-size: 10px;
+    }
 }
